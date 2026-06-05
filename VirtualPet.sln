@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36623.8 d17.14
+VisualStudioVersion = 17.14.36623.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualPet", "VirtualPet\VirtualPet.csproj", "{DC2D9FAE-48BB-4710-B953-F7FD2AE11DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetTest", "PetTest\PetTest.csproj", "{01F8F61B-AE4A-4B40-A2CC-B68E65747C66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DC2D9FAE-48BB-4710-B953-F7FD2AE11DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC2D9FAE-48BB-4710-B953-F7FD2AE11DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC2D9FAE-48BB-4710-B953-F7FD2AE11DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F8F61B-AE4A-4B40-A2CC-B68E65747C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F8F61B-AE4A-4B40-A2CC-B68E65747C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F8F61B-AE4A-4B40-A2CC-B68E65747C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F8F61B-AE4A-4B40-A2CC-B68E65747C66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

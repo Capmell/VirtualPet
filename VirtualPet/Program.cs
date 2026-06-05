@@ -2,7 +2,7 @@
 using System.Timers;
 using Timer = System.Timers.Timer; // just having private static Timer didnt work but when I added this it worked 
 
-namespace VirtualPetApp
+namespace VirtualPet
 {
     class Program
     {
@@ -40,7 +40,7 @@ namespace VirtualPetApp
             while (running)
             {
                 Menu2();
-                Console.WriteLine("\nChoose an action:");
+                Console.WriteLine("Choose an action:");
                 Console.WriteLine("1. Feed");
                 Console.WriteLine("2. Play");
                 Console.WriteLine("3. Save & Exit");
@@ -86,7 +86,7 @@ namespace VirtualPetApp
             Console.WriteLine("========================================");
             Console.WriteLine($" Hunger:    {myPet.Hunger}/100");
             Console.WriteLine($" Happiness: {myPet.Happiness}/100");
-            Console.WriteLine($" Age Ticks: {myPet.AgeTicks}");
+            Console.WriteLine($" Age: {myPet.Age}");
             Console.WriteLine("----------------------------------------");
             Console.WriteLine(myPet.VisualRepresentation());
             Console.WriteLine("========================================");

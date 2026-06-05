@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text.Json;
 
-namespace VirtualPetApp
+namespace VirtualPet
 {
     public class Pet
     {
@@ -10,7 +10,7 @@ namespace VirtualPetApp
         public string Name { get; set; }
         public int Hunger { get; set; } 
         public int Happiness { get; set; } 
-        public int AgeTicks { get; set; } 
+        public int Age { get; set; } 
 
         
         private const int YouthMax = 5;
@@ -23,7 +23,7 @@ namespace VirtualPetApp
             Name = name;
             Hunger = 50; 
             Happiness = 50;
-            AgeTicks = 0;
+            Age = 0;
         }
 
         
@@ -31,8 +31,8 @@ namespace VirtualPetApp
         {
             get
             {
-                if (AgeTicks < YouthMax) return "Baby";
-                if (AgeTicks < AdultMax) return "Child";
+                if (Age < YouthMax) return "Baby";
+                if (Age < AdultMax) return "Child";
                 return "Adult";
             }
         }
@@ -52,7 +52,7 @@ namespace VirtualPetApp
        
         public void PassTime()
         {
-            AgeTicks++;
+            Age++;
             Hunger = Math.Min(100, Hunger + 10); 
             Happiness = Math.Max(0, Happiness - 5); 
         }
