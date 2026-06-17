@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 using System.Text.Json;
 
 namespace VirtualPet
@@ -132,6 +133,12 @@ namespace VirtualPet
                 if (mood == "Joyful") return " :)";
                 return " :|";
             }
+        }
+
+        public string GetBase64Image()
+        {
+            byte[] textBytes = Encoding.UTF8.GetBytes(VisualRepresentation());
+            return Convert.ToBase64String(textBytes);
         }
     }
 }
