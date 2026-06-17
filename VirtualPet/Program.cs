@@ -104,7 +104,7 @@ namespace VirtualPet
             Console.WriteLine("========================================");
         }
 
-        // did some research into the json stuff to keep it consistent as well as encoding since im using the console
+        // did some  extra research into the json stuff to keep it consistent as well as encoding since im using the console
         public static async Task CreatePartyRoom()
         {
             Console.Clear();
